@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x600/?luxury-hotel') no-repeat center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero .overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hero .overlay:hover {
+  transform: scale(1.02);
+}
+
+.hero .btn {
+  margin-top: 20px;
+  display: inline-block;
+  background: #ff9900;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero .btn:hover {
+  background-color: #cc7a00;
+  transform: scale(1.05);
+}
+
+.showcase {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.showcase h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.room {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.room img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room h3 {
+  margin: 10px;
+  color: #003366;
+}
+
+.room p {
+  margin: 0 10px 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 40px 20px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003366;
+  color: #fff;
+}
+

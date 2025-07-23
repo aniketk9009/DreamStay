@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Room</title>
+<link rel="stylesheet" href="book.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Book Your Room</h2>
+  <form action="#">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="room">Room Type:</label>
+    <select id="room" name="room">
+      <option value="deluxe">Deluxe Room</option>
+      <option value="executive">Executive Suite</option>
+      <option value="family">Family Apartment</option>
+    </select>
+
+    <label for="checkin">Check-In Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-Out Date:</label>
+    <input type="date" id="checkout" name="checkout" required>
+
+    <label for="requests">Special Requests:</label>
+    <textarea id="requests" name="requests" rows="3"></textarea>
+
+    <button type="submit"  >Book Now</button>
+  </form>
+</div>
+
+</body>
+</html>
